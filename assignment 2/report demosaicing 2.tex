@@ -1,0 +1,88 @@
+\documentclass{paper}
+
+%\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{color}
+
+
+% load package with ``framed'' and ``numbered'' option.
+%\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+
+% something NOT relevant to the usage of the package.
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{18pt}
+
+
+
+
+
+
+\usepackage[latin1]{inputenc} 
+\usepackage[T1]{fontenc} 
+
+\usepackage{listings} 
+\lstset{% 
+   language=Matlab, 
+   basicstyle=\small\ttfamily, 
+} 
+
+
+
+\title{Assignment 2}
+
+
+
+\author{Name Surname\\Matriculation number}
+% //////////////////////////////////////////////////
+
+
+\begin{document}
+
+
+
+\maketitle
+
+
+% Add figures:
+%\begin{figure}[t]
+%%\begin{center}
+%\quad\quad   \includegraphics[width=1\linewidth]{ass2}
+%%\end{center}
+%
+%\label{fig:performance}
+%\end{figure}
+
+\section*{Demosaicing}
+
+
+\begin{enumerate}
+
+\item Write the Primal-Dual formulation for this problem..
+
+\item Write the explicit expressions for the Primal-Dual steps $y^{n+1} = \text{prox}_{\sigma F^*} (y^n + \sigma K \bar{x}^n)$ and $x^{n+1} = \text{prox}_{\tau G} (x^n  - \tau K^* y^{n+1})$.
+
+
+\item \textbf{Implement primal-dual method for demosaicing.} In this section you should:
+
+\begin{itemize}
+\item Show some images, as the the primal-dual method progresses iteration by iteration. Display the initial and the final image and 3 more images in between.
+\end{itemize}
+\item \textbf{ Find optimal $\lambda$.} In this section you should:
+
+\begin{itemize}
+\item Display the $SSD$ vs. $\lambda$ graph.
+\item Describe the effect of $\lambda$ with respect to the $SSD$ between the ground truth and the solution image.
+\end{itemize}
+
+\item \textbf{ Conclusions.} Discuss the two methods. In this section you should:
+\begin{itemize}
+\item Discuss the advantages and disadvantages of each method.
+\end{itemize}
+\end{enumerate}
+
+ \end{document}
+ 
+ 
